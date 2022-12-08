@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 0-add_integer.py
-"""Defines an integer addition function."""
+"""Defines an integer function that has argument."""
 
 
 def add_integer(a, b=98):
