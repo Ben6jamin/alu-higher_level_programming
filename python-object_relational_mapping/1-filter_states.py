@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" lists all states with a name starting with N
+""" lists all states where  a name starting with N
 (upper N) from the
-database hbtn_0e_0_usa
+database hbtn_0e_0_usa (select case)
 """
 
 import MySQLdb
