@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Test cases base file """
-
+""" import package"""
 import os
 import unittest
 
@@ -8,9 +8,9 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
-
+""" pass class """
 class TestBase(unittest.TestCase):
-    """Test class for Base"""
+    
 
     def test_basic(self):
         """Doc"""
