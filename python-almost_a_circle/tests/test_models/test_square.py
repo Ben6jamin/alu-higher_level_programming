@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Test for Square about new change"""
+"""Test for Square update"""
 
 import os
 import unittest
@@ -11,7 +11,7 @@ from models.square import Square
 
 
 class TestSquare(unittest.TestCase):
-    """Test for class Square"""
+    """pass class Square"""
 
     def test_instance(self):
         """Doc"""
