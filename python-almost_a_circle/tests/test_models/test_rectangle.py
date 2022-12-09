@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Test cases for Base"""
-
+""" import packages"""
 import unittest
 from io import StringIO
 from unittest.mock import patch
@@ -9,7 +9,7 @@ import os
 from models.base import Base
 from models.rectangle import Rectangle
 
-
+""" pass class TestRectangle"""
 class TestRectangle(unittest.TestCase):
     """Test class for Base"""
 
