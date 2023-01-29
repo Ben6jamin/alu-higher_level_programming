@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Class Base"""
+""" pass Class Base"""
 
 import json
 
@@ -11,7 +11,7 @@ class Base:
                 id: number
     """
     __nb_objects = 0
-
+""" define function"""
     def __init__(self, id=None):
         Base.__nb_objects += 1
         self.id = id

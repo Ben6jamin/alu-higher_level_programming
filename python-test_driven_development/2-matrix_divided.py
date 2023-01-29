@@ -3,7 +3,7 @@
 
 
 def matrix_divided(matrix, div):
-    """Divide all elements of a matrix.
+    """Divide all elements of a matrix and make list.
     """
     if (not isinstance(matrix, list) or matrix == [] or
             not all(isinstance(row, list) for row in matrix) or
