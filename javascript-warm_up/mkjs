@@ -1,0 +1,8 @@
+#!/bin/bash
+filename=$1
+
+# The first line of all your files should be exactly #!/usr/bin/node
+echo '#!/usr/bin/node\n' > $filename
+
+# All your files must be executable
+chmod u+x $filename
