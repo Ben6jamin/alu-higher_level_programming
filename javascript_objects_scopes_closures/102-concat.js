@@ -1,11 +1,19 @@
 #!/usr/bin/node
-const content = `${dataA}\n${dataB}`;
+const fs = require('fs');
 
-fs.writeFile(destination, content, errorC => {
-  if (errorC) {
-    console.error(errorC);
-    process.exit(1);
-  }
+const fileA = process.argv[2];
+const fileB = process.argv[3];
+const fileC = process.argv[4];
 
-  console.log(`The contents of fileA and fileB have been concatenated and saved in file ${destination}`);
+fs.readFile(fileA, 'utf-8', (err, dataA) => {
+  if (err) throw err;
+
+  fs.readFile(fileB, 'utf-8', (err, dataB) => {
+    if (err) throw err;
+
+    fs.writeFile(fileC, dataA + dataB, err => {
+      if (err) throw err;
+      console.log(`${fileA} and ${fileB} have been concatenated to ${fileC}`);
+    });
+  });
 });
