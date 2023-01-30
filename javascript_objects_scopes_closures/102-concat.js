@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 const fs = require('fs');
 let sourceFile1 = process.argv[2];
 let sourceFile2 = process.argv[3];
