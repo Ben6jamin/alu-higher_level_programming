@@ -1,16 +1,23 @@
 #!/usr/bin/node
-const fs = require('fs');
-let sourceFile1 = process.argv[2];
-let sourceFile2 = process.argv[3];
-let destinationFile = process.argv[4];
+onst fs = require("fs");
 
-fs.readFile(sourceFile1, 'utf8', (err, data1) => {
-  if (err) throw err;
-  fs.readFile(sourceFile2, 'utf8', (err, data2) => {
-    if (err) throw err;
-    fs.writeFile(destinationFile, data1 + data2, (err) => {
-      if (err) throw err;
-      console.log(`${sourceFile1} and ${sourceFile2} have been concatenated and saved to ${destinationFile}`);
-    });
-  });
+if (process.argv.length !== 5) {
+console.error("Usage: 102-concat.js <fileA> <fileB> <destination>");
+process.exit(1);
+}
+
+const [fileA, fileB, destination] = process.argv.slice(2);
+
+fs.readFile(fileA, "utf-8", (errorA, dataA) => {
+if (errorA) {
+console.error(errorA);
+process.exit(1);
+}
+
+fs.readFile(fileB, "utf-8", (errorB, dataB) => {
+if (errorB) {
+console.error(errorB);
+process.exit(1);
+}
 });
+});  
