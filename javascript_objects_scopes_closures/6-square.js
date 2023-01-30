@@ -1,7 +1,7 @@
 #!/usr/bin/node
 class Square extends require('./5-square.js') {
   constructor (size) {
-    super (size, size);
+    super(size, size);
   }
 
   charPrint (c) {
