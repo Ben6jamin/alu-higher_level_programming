@@ -21,4 +21,3 @@ request(url + movieId, function (error, response, body) {
     }
   }
 });
-
