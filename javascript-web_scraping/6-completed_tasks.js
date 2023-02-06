@@ -8,7 +8,7 @@ request(url, function (error, response, body) {
     console.log('error:', error);
   } else {
     const tasks = JSON.parse(body);
-    let taskCount = {};
+    const taskCount = {};
     tasks.forEach(task => {
       if (task.completed) {
         if (!taskCount[task.userId]) {
